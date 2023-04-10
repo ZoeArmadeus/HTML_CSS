@@ -12,10 +12,46 @@
             border-style: dashed;
             border-width: 4px;*/
             background-color: antiquewhite;
-            background-clip:content-box ;
+            background-clip: content-box;
             border: dashed purple 4px;
             padding: 1em;
         }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: gray;
+        }
+
+        a:hover {
+            background-color: chartreuse;
+        }
+
+        a:active {
+            color: brown;
+            background-color: chartreuse;
+        }
+
+        p.warning {
+            color: aqua;
+        }
+
+        p.warning::before {
+            content: "前面";
+            color: red;
+        }
+
+        p.warning::after {
+            content: "後面";
+            color: red;
+        }
+
+        blockquote.seconend{
+            background-image: url("https://picsum.photos/id/642/600/400");
+        }
+        
     </style>
     <title>Document</title>
 </head>
@@ -27,7 +63,17 @@
         dolor sit occaecat sint occaecat nulla. Duis Lorem laboris cupidatat adipisicing nisi excepteur Lorem culpa
         irure aute elit cupidatat.
     </blockquote>
-    <script src=""></script>
+    <a href="http://www.google.com.tw">Google</a>
+    <p class="warning">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magnam, dignissimos dolorum quaerat cumque
+        saepe quibusdam distinctio, quam facere omnis nihil. Quaerat ipsum magnam illum at aliquid, possimus repellendus
+        deserunt!
+    </p>
+    <blockquote class="seconend">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores aliquam tempore quae cumque quasi officia quo,
+        molestias dolorem dolorum omnis dignissimos repudiandae debitis numquam eos! Laboriosam eligendi harum
+        perspiciatis ipsa!
+    </blockquote>
 </body>
 
 </html>
